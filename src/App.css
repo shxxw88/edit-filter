@@ -192,6 +192,12 @@
   box-shadow: 0 0 0 1px #b7e857;
 }
 
+.form-submit {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 /* Action buttons container */
 .actions {
   display: flex;
@@ -236,4 +242,33 @@
 .delete-btn:hover {
   background: #f880ce;
   color: #000;
+}
+
+/* Filter block */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.4rem;
+}
+
+.filter-group label {
+  font-weight: 600;
+}
+
+.filter-group select {
+  padding: 0.5rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  font-family: "Roboto Mono", sans-serif;
+  background: #fff;
+  cursor: pointer;
+}
+.filter-group select:focus {
+  outline: none;
 }
